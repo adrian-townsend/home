@@ -475,4 +475,18 @@ img.pinImg {
 	.first {
 		padding: 0px 10px;
 	}
+	
+	.overWord {
+		font-size: 35px;
+		text-align: center;
+		color: white;
+		text-shadow: 3px 3px black;
+	}
+	
+	.overNote {
+		font-size: 40px;
+		text-shadow: 3px 3px black;
+		text-align: center;
+		color: white;
+	}
 }
