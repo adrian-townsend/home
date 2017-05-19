@@ -8,6 +8,7 @@ body {
 	background-color: black;
 	font-family: 'Noto Serif';
 	height: 100%;
+	overflow-x: hidden;
 }
 
 .main {
