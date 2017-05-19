@@ -54,13 +54,29 @@
 				<div class="container-fluid">
 					<ul class="navList">
 						<li class="brandItem"><a href="#" class="navBrand">Adrian Townsend</a></li>
-						<li class="navItem"><a class="listItem" href="#">About</a></li>
-						<li class="navItem"><a class="listItem" href="#">Works</a></li>
-						<li class="navItem"><a class="listItem" href="#">Services</a></li>
 						<li class="navItem"><a class="listItem" href="#">Gallery</a></li>
+						<li class="navItem"><a class="listItem" href="#">Services</a></li>
+						<li class="navItem"><a class="listItem" href="#">Works</a></li>
+						<li class="navItem"><a class="listItem" href="#">About</a></li>
 					</ul>
 				</div>
 			</div>
+			
+			<nav class="showNav">
+					<div class="showNavHeader">
+						<a class="showNavBrand">Adrian Townsend</a>
+						<span class="showNavIcon"><i class="fa fa-bars" onclick="showNavMenu()"></i></span>
+					</div>
+					<div class="showNavMenuList" id="showList">
+						<span class="closeNavBtn" onclick="closeShowNav()" href="javascript:void(0)">&times;</span>	
+						<ul class="showNavList">
+							<li><a class="showNavItem" href="#">About</a></li>
+							<li><a class="showNavItem" href="#">Works</a></li>
+							<li><a class="showNavItem" href="#">Services</a></li>
+							<li><a class="showNavItem" href="#">Gallery</a></li>
+						</ul>
+					</div>
+			</nav>
 			
 			<div class="mainTitle">
 				<div class="titleBig">Adrian Townsend</div>
@@ -84,21 +100,76 @@
 		<!-- Actual Content of Landing Page -->
 		<div class="container">
 			
-			<!--- TEMPORARY BLOCKING !!!!!!
+			
 			<div class="first">
-				<div class="row">
-					<div class="col-md-6 firstGrab">
-						<h1>Full Force Design</h1>
-						<p>Covering all aspects from start to finish, I will help you in creating your brand and displaying it to the world. 
-						My goal is to connect myself and all those around me to others. Fix this text before deploying the site. This definitely needs to be changed since it's filler.
-						Who am I? <a href="#" class="grabToAbout">Click here to learn more</a></p>
-					</div>
-					<div class="col-md-1"></div>
-					<div class="col-md-5 slideRight">
-					</div>
+				<div class="intro">
+					<h1 style="font-family: 'Holtwood One SC'">Hello!</h1>
+					<p>I'm an all-around creator with the goal of developing and growing the brands of others and myself. Interested yet? Scroll down to learn more.</p>
 				</div>
 			</div>
-			--->
+			
+		</div>	
+			
+			<div class="menu">
+				<div class="overlay">
+					
+					<div class="fullMenu">
+						<div class="menuList" id="menuList">
+							<div class="row">
+								<div class="col-md-6">
+									<ul class="menuBullet">
+										<li class="menuListLink" onclick="showMenu('about')">About</a></li>
+										<li class="menuListLink" onclick="showMenu('works')">Works</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<ul class="menuBullet">
+										<li class="menuListLink" onclick="showMenu('services')">Services</li>
+										<li class="menuListLink" onclick="showMenu('gallery')">Gallery</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+				
+					
+						<div class="menuBlock" id="menuBlock">
+							<span href="javascript:void(0)" class="closeButton" id="closeButton" onclick="closeNav()">&times;</span>
+							<div class="aboutBlock" id="about">
+								<div class="menuBlockHead">About</div>
+								<div class="menuBlockDesc">Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
+								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
+								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes.
+								</div>
+							</div>
+							<div class="worksBlock" id="works">
+								<div class="menuBlockHead">Works</div>
+								<div class="menuBlockDesc">Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
+								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
+								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes.
+								</div>
+							</div>
+							<div class="servicesBlock" id="services">
+								<div class="menuBlockHead">Services</div>
+								<div class="menuBlockDesc">Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
+								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
+								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes.
+								</div>
+							</div>
+							<div class="galleryBlock" id="gallery">
+								<div class="menuBlockHead">Gallery</div>
+								<div class="menuBlockDesc">Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
+								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
+								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes.
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				
+			</div>
+			
+		<div class="container">
 		
 			<div class="second">
 				<div class="row">
@@ -127,26 +198,26 @@
 		<div class="bigFooter">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 oneFooter">
 						<ul class="footerList listLeft">
-							<li>Studio</li>
-							<li>About</li>
-							<li>Work</li>
-							<li>Services</li>
-							<li>Gallery</li>
+							<li style="text-decoration: underline; font-size: 160%;">Studio</li>
+							<li><a href="#" class="footerListLink">About</a></li>
+							<li><a href="#" class="footerListLink">Work</a></li>
+							<li><a href="#" class="footerListLink">Services</a></li>
+							<li><a href="#" class="footerListLink">Gallery</a></li>
 						</ul>
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-4 oneFooter">
 						<ul class="footerList listCenter">
-							<li style="font-family: 'Holtwood One SC';">Contact</li>
+							<li style="font-family: 'Holtwood One SC'; text-decoration: underline; font-size: 160%;">Contact</li>
 							<li><i class="material-icons">&#xe551;</i>&nbsp;(772) 475-5225</li>
 							<li><i class="material-icons">&#xe0e1;</i>&nbsp;atownsend013@yahoo.com</li>
 						</ul>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 oneFooter">
 						<div class="footerFollow listRight">
 							<ul class="footerList">
-								<li class="listHead">Follow Me</li>
+								<li class="listHead" style="text-decoration: underline; font-size: 160%;">Follow Me</li>
 								<li class="listPin"><a href="#"><img src="github.png" alt="github" class="pinImg"></a></li>
 								<li class="listPin"><a href="#"><img src="instagram.png" alt="instagram" class="pinImg"></a></li>
 								<li class="listPin"><a href="#"><img src="linkedin.png" alt="linkedin" class="pinImg"></a></li>
@@ -162,11 +233,32 @@
 		
 		<script>
 			
+			var element = $(this);
+			
 			$(document).ready(function(){
 				$("#scrollToTop").click(function(){
 					$(body).animate({scrollTop: '0'}, 250);
-				});
+				});	
 			});
+			
+			function closeNav() {
+				document.getElementById("menuBlock").style.display = "none";
+			}
+			
+			function showMenu(menuItem){
+				document.getElementById(menuItem).style.display = 'none';
+				document.getElementById('menuBlock').style.display = 'inline-block';
+				document.getElementById(menuItem).style.display = 'inline-block';
+			}
+			
+			function showNavMenu() {
+				document.getElementById('showList').style.display = 'block';
+				document.getElementById('showList').style.width = '250px';
+			}
+			
+			function closeShowNav() {
+				document.getElementById('showList').style.display = 'none';
+			}
 		
 		</script>
 		
