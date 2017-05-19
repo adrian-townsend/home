@@ -41,7 +41,7 @@ li.brandItem {
 
 li.navItem {
 	font-weight: 700;
-	font-size: 125%;
+	font-size: 150%;
 	float: right;
 	margin: 10px 10px 0px 10px;
 }
@@ -64,6 +64,48 @@ li.navItem {
 .listItem:hover {
 	color: #e60000;
 	transition: 0.3s ease;
+}
+
+.showNav{
+	display: none;	
+	width: 100%;
+}
+
+.showNavBrand {
+	font-family: 'Holtwood One SC';
+	color: white;
+	font-size: 160%;
+}
+
+.showNavBrand:link, .showNavBrand:active, .showNavBrand:visited {
+	color: white;
+}
+
+.showNavBrand:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: #990000;
+	transition: 0.3s ease;
+}
+
+.showNavMenuList {
+	display: none;	
+}
+
+.showNavItem {
+	font-size: 200%;
+	margin: 15px 0px;
+	color: black;
+}
+
+.showNavItem:link, .showNavItem:active, .showNavItem:visited {
+	color: black;
+}
+
+.showNavItem:hover {
+	color: #990000;
+	transition: 0.2s;
+	text-decoration: none;
 }
 
 .mainTitle {
@@ -91,31 +133,6 @@ li.navItem {
 	background-color: rgba(0,0,0,0.5);
 }
 
-.first {
-	margin: 50px 0px 100px 0px;
-}
-.firstGrab {
-	background-image: url('skyscraper.jpg');
-	background-size: cover;
-	height: 600px;
-	border-radius: 5px;
-}
-
-.firstGrab h1 {
-	font-weight: 900;
-	text-shadow: 1px 1px black;
-	font-size: 500%;
-}
-
-.firstGrab p {
-	text-align: center;
-	padding: 20px;
-	margin-top: 50px;
-	font-weight: 700;
-	text-shadow: 1px 1px black;
-	font-size: 175%;
-}
-
 .jumpButton {
 	position: fixed;
 	bottom: 10px;
@@ -138,8 +155,105 @@ li.navItem {
     margin: 4px 2px;
 }
 
+.jumpBtn:hover {
+	background-color: #ff0000;
+	transition: 0.3s ease;
+	color: #ffffff;
+	
+}
+
 .jumpBtn:focus {
 	outline: 0;
+}
+
+.first {
+	padding: 0px 80px;
+	margin: 50px 0px 100px 0px;
+}
+
+.intro {
+	text-align: center;
+}
+.intro h1{
+	font-size: 500%;
+	font-weight: bold;
+}
+
+.intro p {
+	font-size: 250%;
+}
+
+.menu {
+	background-image: url('SideWalkEdit.jpg');
+	background-size: cover;
+	width: 100%;
+	font-family: 'Holtwood One SC';
+}
+
+.fullMenu {
+	padding: 120px 0px;
+}
+
+.menuBullet {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+
+.menuListLink {
+	cursor: pointer;
+	font-size: 500%;
+	color: #b3b3ff;
+}
+
+.menuListLink:hover {
+	color: white;
+	transition: 0.4s ease;
+}
+
+.menuBlock {
+	display: none;
+	font-weight: bold;
+	font-size: 100%;
+	padding: 40px;
+	transition: 0.4s;
+}
+
+.aboutBlock, .worksBlock, .servicesBlock, .galleryBlock {
+	font-size: 100%;
+}
+
+#about{
+	display: none;
+	transition: 0.4s;
+}
+
+#services {
+	display: none;
+	transition: 0.4s;
+}
+
+#works {
+	display: none;
+	transition: 0.4s;
+}
+
+#gallery {
+	display: none;
+	transition: 0.4s;
+}
+
+.menuBlockHead {
+	font-weight: bold;
+	font-size: 200%;
+}
+
+.closeButton {
+	position: absolute;
+	right: 90px;
+	font-size: 90px;
+	color: #ec1818;
+	cursor: pointer;
 }
 
 .second {
@@ -170,7 +284,7 @@ li.navItem {
 }
 
 .splitTwo {
-	background-image: url('solisWord.JPG');
+	background-image: url('solisWord.jpg');
 	background-size: cover;
 }
 
@@ -221,12 +335,17 @@ ul.footerList {
 }
 
 ul.listLeft {
-	padding-left: 20%;
+	padding-left: 0;
 	font-family: 'Holtwood One SC';
+}	
+
+ul.listCenter{
+	margin-right: 50px;
+	
 }
 
 div.listRight {
-	padding-left: 20%;
+	text-align:center;
 }
 
 .listHead {
@@ -258,4 +377,101 @@ img.pinImg {
 
 .footerBrand {
 	font-weight: bold;
+}
+
+.footerListLink:active, .footerListLink:link, .footerListLink:visited {
+	color: white;
+}
+
+.footerListLink:hover {
+	text-decoration: none;
+	color: #990000;
+	transition: 0.2s;
+}
+
+
+
+
+@media only screen and (max-width: 770px) {
+	.footerList {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.titleBig {
+		font-size: 350%;
+	}
+	
+	.titleSmall {
+		font-size: 175%;
+	}
+	
+	li.brandItem {
+		font-size: 125%;
+	}
+	
+	.navMenu {
+		display: none;
+	}
+	
+	.showNav {
+		display: block;
+		padding: 20px 10px 0px 10px;
+	}
+
+	.showNavMenuList {
+		width: 0;
+		z-index: 15;
+		top: 0;
+		left: 0;
+		background-color: white;
+		position: fixed;
+		height: 100%;
+		color: black;
+		font-family: 'Holtwood One SC';
+		transition: 0.4s;
+		padding: 50px 0px 0px 20px;
+	}
+	
+	.showNavIcon {
+		text-align: right;
+		float: right;
+		font-size: 250%;
+	}
+
+	.closeNavBtn {
+		position: absolute;
+		top: 0;
+		right: 20px;
+		font-size: 50px;
+		color: black;
+		cursor: pointer;
+	}
+	
+	.closeNavBtn:hover {
+		transition: 0.2s;
+		color: #990000;
+	}
+}
+
+@media only screen and (max-width: 614px) {
+	.intro h1 {
+		font-size: 300%;
+	}
+	
+	.intro p {
+		font-size: 150%;
+	}
+	
+	.menuListLink {
+		font-size: 300%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.first {
+		padding: 0px 10px;
+	}
 }
