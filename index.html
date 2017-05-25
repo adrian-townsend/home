@@ -135,6 +135,8 @@
 					
 						<div class="menuBlock" id="menuBlock">
 							<span href="javascript:void(0)" class="closeButton" id="closeButton" onclick="closeNav()">&times;</span>
+							
+							
 							<div class="aboutBlock" id="about">
 								<div class="menuBlockHead">About</div>
 								<div class="menuBlockDesc">I am a web designer and developer in Tampa, Florida designing and developing for about 2 years. 
@@ -144,17 +146,29 @@
 								If you are interested I have included a link to my current resume <a href="https://solis-enterprise.github.io/adriantownsend/Adrian_Townsend_Resume.pdf" target="_blank">here.</a>
 								</div>
 							</div>
+							
+							
 							<div class="worksBlock" id="works">
 								<div class="menuBlockHead">Works</div>
-								<div class="menuBlockDesc">
-									<div class="row imgRow">
-										<div class="col-md-3 worksImgBlock"><a class="worksLink" href="#"><img class="worksImg worksImgLeft" src="solisEnt_snip.JPG" alt="solis First"></a></div>
-										<div class="col-md-3 worksImgBlock"><a class="worksLink" href="#"><img class="worksImg" src="solisHome_snip.JPG" alt="solis First"></a></div>
-										<div class="col-md-3 worksImgBlock"><a class="worksLink" href="#"><img class="worksImg" src="solisBusiness_snip.JPG" alt="solis First"></a></div>
-										<div class="col-md-3 worksImgBlock"><a class="worksLink" href="#"><img class="worksImg worksImgRight" src="firstPortfolio_snip.JPG" alt="solis First"></a></div>
+								<div class="row worksRow">
+									<div class="col-md-6">
+										<div class="splitImg splitOne" id="solisNote">
+											<a href="https://solis-enterprise.github.io/solisenterprise/solishome.html" target="_blank">
+												<div class="splitOverlay"><div class="overNote">Solis Enterprise</div></div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="splitImg splitTwo" id="solisWord">
+											<a href="https://solisinvictus.com/" target="_blank">
+												<div class="splitOverlay"><span class="overWord">Solis Invictus</span></div>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
+							
+							
 							<div class="servicesBlock" id="services">
 								<div class="row">
 									<div class="menuBlockHead">Services</div>
@@ -171,16 +185,25 @@
 										</div>
 									</div>
 								</div>
-								
-								<div class="row">
+								<div class="row skillsRow">
 									<div class="menuBlockHead">Skills</div>
 									<div class="menuBlockDesc servicesImgDesc">
-										<img style="width: 40%; height: auto;" src="webtrifecta.png" alt="HTML, CSS, JavaScript">
-										<img style="width: 150px; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/1000px-Boostrap_logo.svg.png" alt="bootstrap">
-										<img style="width: 150px; height: auto;" src="http://sarimzaidi.com/images/jquery_logo.png" alt="Jquery">
+										<div class="row">
+											<img class="skillsImgBig" style="width: 40%; height: auto;" src="webtrifecta.png" alt="HTML, CSS, JavaScript">
+										</div>
+										<div class="row">
+											<div class="col-sm-6">
+											<img class="skillsImgSmall" style="width: 30%; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/1000px-Boostrap_logo.svg.png" alt="bootstrap">
+											</div>
+											<div class="col-sm-6">
+											<img class="skillsImgSmall" style="width: 30%; height: auto;" src="http://sarimzaidi.com/images/jquery_logo.png" alt="Jquery">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
+							
+							
 							<div class="galleryBlock" id="gallery">
 								<div class="menuBlockHead">Gallery</div>
 								<div class="menuBlockDesc">Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
@@ -199,20 +222,7 @@
 		
 			<div class="second">
 				<div class="row">
-					<div class="col-md-6">
-						<div class="splitImg splitOne" id="solisNote">
-							<a href="https://solis-enterprise.github.io/solisenterprise/solishome.html" target="_blank">
-								<div class="splitOverlay"><div class="overNote">Solis Enterprise</div></div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="splitImg splitTwo" id="solisWord">
-							<a href="https://solisinvictus.com/" target="_blank">
-								<div class="splitOverlay"><span class="overWord">Solis Invictus</span></div>
-							</a>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 			
@@ -227,10 +237,10 @@
 					<div class="col-md-4 oneFooter">
 						<ul class="footerList listLeft">
 							<li style="text-decoration: underline; font-size: 160%;">Studio</li>
-							<li><a href="#" class="footerListLink">About</a></li>
-							<li><a href="#" class="footerListLink">Work</a></li>
-							<li><a href="#" class="footerListLink">Services</a></li>
-							<li><a href="#" class="footerListLink">Gallery</a></li>
+							<li class="footerListLink" onClick="showMenu(1)">About</li>
+							<li class="footerListLink" onClick="showMenu(2)">Work</li>
+							<li class="footerListLink" onClick="showMenu(3)">Services</li>
+							<li class="footerListLink">Gallery</li>
 						</ul>
 					</div>
 					<div class="col-sm-4 oneFooter">
