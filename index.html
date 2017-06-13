@@ -54,10 +54,10 @@
 				<div class="container-fluid">
 					<ul class="navList">
 						<li class="brandItem"><a href="#" class="navBrand">Adrian Townsend</a></li>
-						<li class="navItem"><a class="listItem" href="#">Gallery</a></li>
-						<li class="navItem"><a class="listItem" href="#">Services</a></li>
-						<li class="navItem"><a class="listItem" href="#">Works</a></li>
-						<li class="navItem"><a class="listItem" href="#">About</a></li>
+						<li class="navItem" onClick="showMenu(4)"><a class="listItem" href="#" >Gallery</a></li>
+						<li class="navItem" onClick="showMenu(3)"><a class="listItem" href="#">Services</a></li>
+						<li class="navItem" onClick="showMenu(2)"><a class="listItem" href="#">Works</a></li>
+						<li class="navItem" onClick="showMenu(1)"><a class="listItem" href="#">About</a></li>
 					</ul>
 				</div>
 			</div>
@@ -70,10 +70,10 @@
 					<div class="showNavMenuList" id="showList">
 						<span class="closeNavBtn" onclick="closeShowNav()" href="javascript:void(0)">&times;</span>	
 						<ul class="showNavList">
-							<li><a class="showNavItem" href="#">About</a></li>
-							<li><a class="showNavItem" href="#">Works</a></li>
-							<li><a class="showNavItem" href="#">Services</a></li>
-							<li><a class="showNavItem" href="#">Gallery</a></li>
+							<li onClick="showMenu(1)"><a class="showNavItem" href="#">About</a></li>
+							<li onClick="showMenu(2)"><a class="showNavItem" href="#">Works</a></li>
+							<li onClick="showMenu(3)"><a class="showNavItem" href="#">Services</a></li>
+							<li onClick="showMenu(4)"><a class="showNavItem" href="#">Gallery</a></li>
 						</ul>
 					</div>
 			</nav>
@@ -113,6 +113,7 @@
 			<div class="menu">
 				<div class="overlay">
 					
+					<!-- Menu Selection List -->
 					<div class="fullMenu">
 						<div class="menuList" id="menuList">
 							<div class="row">
@@ -125,7 +126,7 @@
 								<div class="col-md-6">
 									<ul class="menuBullet">
 										<li class="menuListLink" onClick="showMenu(3)">Services</li>
-										<li class="menuListLink"><a class="galleryLink" href="#">Gallery</a></li>
+										<li class="menuListLink" onClick="showMenu(4)">Gallery</li>
 									</ul>
 								</div>
 							</div>
@@ -134,9 +135,11 @@
 						
 					
 						<div class="menuBlock" id="menuBlock">
+						
+						<!-- Close Button -->
 							<span href="javascript:void(0)" class="closeButton" id="closeButton" onclick="closeNav()">&times;</span>
 							
-							
+						<!-- Menu Information Pieces -->	
 							<div class="aboutBlock" id="about">
 								<div class="menuBlockHead">About</div>
 								<div class="menuBlockDesc">I am a web designer and developer in Tampa, Florida designing and developing for about 2 years. 
@@ -205,10 +208,22 @@
 							
 							
 							<div class="galleryBlock" id="gallery">
-								<div class="menuBlockHead">Gallery</div>
-								<div class="menuBlockDesc">Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
-								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes. 
-								Some simple text to add in. Nothing special just adding filler text in here to test it out and for test purposes.
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-4 imgBlock"><a href="SweetChick.JPG" target="_blank"><img alt="img" class="galleryImg" src="SweetChick.JPG"></img></a></div>
+										<div class="col-sm-4 imgBlock"><a href="arlington.JPG" target="_blank"><img alt="img" class="galleryImg" src="arlington.JPG"></img></a></div>
+										<div class="col-sm-4 imgBlock"><a href="Hallway.JPG" target="_blank"><img alt="img" class="galleryImg" src="Hallway.JPG"></img></a></div>
+									</div>
+									<div class="row">
+										<div class="col-sm-4 imgBlock"><a href="SidewalkEdit.JPG" target="_blank"><img alt="img" class="galleryImg" src="SidewalkEdit.JPG"></img></a></div>
+										<div class="col-sm-4 imgBlock"><a href="Hedge.JPG" target="_blank"><img alt="img" class="galleryImg" src="Hedge.JPG"></img></a></div>
+										<div class="col-sm-4 imgBlock"><a href="CamaroSS.JPG" target="_blank"><img alt="img" class="galleryImg" src="CamaroSS.JPG"></img></a></div>
+									</div>
+									<div class="row">
+										<div class="col-sm-4 imgBlock"><a href="BlueGate.JPG" target="_blank"><img alt="img" class="galleryImg" src="BlueGate.JPG"></img></a></div>
+										<div class="col-sm-4 imgBlock"><a href="gator_sign.JPG" target="_blank"><img alt="img" class="galleryImg" src="gator_sign.JPG"></img></a></div>
+										<div class="col-sm-4 imgBlock"><a href="SolisCover.PNG" target="_blank"><img alt="img" class="galleryImg" src="SolisCover.PNG"></img></a></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -218,15 +233,42 @@
 				
 			</div>
 			
-		<div class="container">
 		
-			<div class="second">
-				<div class="row">
+		
+		<!-- Contact Form 
+			(_) Pop-out to fixed position w/ overlay
+			(_) Name, phone number, email, work interested in, additional details
+			(_) Form input validation for phone number and completed fields
+			(_) Secure sending of info
+		-->
+		<!--
+		<div class="contactForm">
+			<span class="formClose" onClick="closeForm()" href="javascript:void(0)">&times;</span>
+			<div class="container">
+				<div class="contactBox">
+					<h1>Interested in Working Together?<br>
+					Contact me here!</h1> 
+						-->
+					
+					<!-- Name/phone/email/type of service/additional details -->
+					<!--
+					<form action="atownsend013@yahoo.com" method="post" enctype="text/plain">
+						Name:<br>
+						<input type="text" name="name"><br>
+						E-mail:<br>
+						<input type="text" name="mail"><br>
+						Type of Service:<br>
+						<input type="text" name="service" size="20"><br>
+						Details:<br>
+						<input type="text" class="detailsField" name="details" size="50"><br>
+						<input class="formButton" type="submit" value="Send">
+						<input class="formButton" type="reset" value="Reset">
+					</form>
 					
 				</div>
 			</div>
-			
 		</div>
+		-->
 		
 		<!-- White line separating text and footer ( ) -->
 		<div class="footerLine"></div>
@@ -236,11 +278,13 @@
 				<div class="row">
 					<div class="col-md-4 oneFooter">
 						<ul class="footerList listLeft">
+						
+						<!-- MAKE EACH LINK SCROLL TO THE TOP OF MENU LIST ONCLICK -->
 							<li style="text-decoration: underline; font-size: 160%;">Studio</li>
 							<li class="footerListLink" onClick="showMenu(1)">About</li>
 							<li class="footerListLink" onClick="showMenu(2)">Work</li>
 							<li class="footerListLink" onClick="showMenu(3)">Services</li>
-							<li class="footerListLink">Gallery</li>
+							<li class="footerListLink" onClick="showMenu(4)">Gallery</li>
 						</ul>
 					</div>
 					<div class="col-sm-4 oneFooter">
@@ -303,7 +347,9 @@
 					case 3:
 						document.getElementById('services').style.display = 'inline-block';
 						break;
-					
+					case 4:
+						document.getElementById('gallery').style.display = 'inline-block';
+						break;
 					
 				}
 			}
