@@ -1,2 +1,11 @@
 gems:
   - jekyll-seo-tag
+
+title: Adrian Townsend - Web Developer
+description: Adrian Townsend - Web Devloper, Designer, Photographer
+url: https://adrian-townsend.github.io/home
+author: Adrian Townsend
+social:
+  name: Adrian Townsend
+  links: 
+    - https://instagram.com/solisenterprise
