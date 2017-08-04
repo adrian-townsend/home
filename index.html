@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <meta name="keywords" content="adrian, townsend, adrian-townsend, solis, enterprise, solisenterprise, github, adriantownsend, web, website, developer, designer, html5, css, javascript, webdesigner, tampa, florida, invictus, solisinvictus" />
-	  <meta name="author" content="Adrian R Townsend">
-    <title>Adrian Townsend Portfolio</title>
+    <title>Adrian Townsend</title>
 	
 	<!--Bootstrap-->
 	<!-- Latest compiled and minified CSS -->
@@ -31,7 +29,7 @@
     <![endif]-->
 	
 	<!--Added Google Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Noto+Serif:400,700|Lobster|Merriweather:400,700,900|Alfa+Slab+One|Sonsie+One|Ultra|Work+Sans:900|Holtwood+One+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Noto+Serif:400,700|Lobster|Merriweather:400,700,900|Alfa+Slab+One|Sonsie+One|Ultra|Work+Sans:900|Holtwood+One+SC|Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		
 	<!-- Icon links -->
@@ -194,14 +192,20 @@
 									<div class="menuBlockHead">Skills</div>
 									<div class="menuBlockDesc servicesImgDesc">
 										<div class="row">
-											<img class="skillsImgBig" style="width: 40%; height: auto;" src="webtrifecta.png" alt="HTML, CSS, JavaScript">
+											<img class="skillsImgBig" src="webtrifecta.png" alt="HTML, CSS, JavaScript">
 										</div>
 										<div class="row">
-											<div class="col-sm-6">
-											<img class="skillsImgSmall" style="width: 30%; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/1000px-Boostrap_logo.svg.png" alt="bootstrap">
+											<div class="col-sm-3">
+											<img class="skillsImgSmall" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/1000px-Boostrap_logo.svg.png" alt="bootstrap">
 											</div>
-											<div class="col-sm-6">
-											<img class="skillsImgSmall" style="width: 30%; height: auto;" src="http://sarimzaidi.com/images/jquery_logo.png" alt="Jquery">
+											<div class="col-sm-3">
+											<img class="skillsImgMed" src="https://cdn.worldvectorlogo.com/logos/php-1.svg" alt="PHP">
+											</div>
+											<div class="col-sm-3">
+											<img class="skillsImgSmall" src="https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" alt="Angular">
+											</div>
+											<div class="col-sm-3">
+											<img class="skillsImgSmall" src="http://sarimzaidi.com/images/jquery_logo.png" alt="Jquery">
 											</div>
 										</div>
 									</div>
@@ -293,7 +297,7 @@
 						<ul class="footerList listCenter">
 							<li style="font-family: 'Holtwood One SC'; text-decoration: underline; font-size: 160%;">Contact</li>
 							<li><i class="material-icons">&#xe551;</i>&nbsp;(772) 475-5225</li>
-							<li><i class="material-icons">&#xe0e1;</i>&nbsp;atownsend013@yahoo.com</li>
+							<li><i class="material-icons">&#xe0e1;</i>&nbsp;<a href="mailto:atownsend013@yahoo.com" target="_top" class="messageLinkSm">atownsend013@yahoo.com</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 oneFooter">
@@ -304,7 +308,7 @@
 								<li class="listPin"><a href="https://www.instagram.com/adriantownsend_phd" target="_blank"><img src="instagram.png" alt="instagram" class="pinImg"></a></li>
 								<li class="listPin"><a href="https://www.linkedin.com/in/adrianarttownsend/" target="_blank"><img src="linkedin.png" alt="linkedin" class="pinImg"></a></li>
 							</ul>
-							<a href="#" class="messageLink">Send Full message here &gt;</a>
+							<a href="mailto:atownsend013@yahoo.com" target="_top" class="messageLink">Send Full message here &gt;</a>
 							<div class="footerBrand">Solis Enterprise &copy; 2017</div>
 						</div>
 					</div>
@@ -319,7 +323,7 @@
 			
 			$(document).ready(function(){
 				$("#scrollToTop").click(function(){
-					$(body).animate({scrollTop: '0'}, 250);
+					$('html,body').animate({scrollTop: '0'}, 250);
 				});	
 			});
 			
