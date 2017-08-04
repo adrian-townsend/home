@@ -2,6 +2,7 @@
 
 * {
 	color: white;
+	box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 .main {
-	background-image:url('view-copy.jpg');
+	background-image:url('view.jpg');
 	background-size: cover;
 	width: 100%;
 	min-height: 100%;
@@ -185,7 +186,7 @@ li.navItem {
 }
 
 .menu {
-	background-image: url('SidewalkEdit-copy.jpg');
+	background-image: url('SidewalkEdit.jpg');
 	background-size: cover;
 	width: 100%;
 	font-family: 'Holtwood One SC';
@@ -217,13 +218,14 @@ li.navItem {
 	display: none;
 	font-weight: bold;
 	font-size: 100%;
-	padding: 40px;
+	padding: 40px 20px;
 	transition: 0.4s;
-	width: 100%;
+	width: 97%;
 }
 
 .aboutBlock, .worksBlock, .servicesBlock, .galleryBlock {
 	font-size: 100%;
+	border-radius: 20px;	
 }
 
 #about{
@@ -284,11 +286,23 @@ li.navItem {
 .skillsImgBig {
 	display: block;
 	margin: auto;
+	width: 40%;
+	height: auto;
+}
+
+.skillsImgMed {
+	display: block;
+	margin: auto;
+	width: 70%;
+	height: auto;
 }
 
 .skillsImgSmall {
 	display: block;
 	margin: 0px auto;
+	width: 50%; 
+	height: auto;
+	margin: 10px auto;
 }
 
 .menuBlockDesc {
@@ -325,7 +339,7 @@ li.navItem {
 }
 
 .splitOne {
-	background-image: url('SolisCover-copy.jpg');
+	background-image: url('SolisCover.png');
 	background-size: cover;
 }
 
@@ -475,6 +489,16 @@ img.pinImg {
 	text-decoration: none;
 }
 
+.messageLinkSm:link, .messageLinkSm:active, .messageLinkSm:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.messageLinkSm:hover {
+	color: #990000;
+	transition: 0.4s ease;
+}
+
 .messageLink:hover {
 	color: #990000;
 	font-weight: bold;
@@ -562,6 +586,18 @@ img.pinImg {
 	.closeNavBtn:hover {
 		transition: 0.2s;
 		color: #990000;
+	}
+	
+	.skillsImgBig {
+		width: 70%;
+	}
+	
+	.skillsImgMed {
+	width: 50%;
+	}
+	
+	.skillsImgSmall {
+		width: 40%;
 	}
 }
 
