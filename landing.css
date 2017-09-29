@@ -1,6 +1,6 @@
 *{color:white;box-sizing:border-box;}
 body{background-color:black;font-family:'Noto Serif';height:100%;overflow-x:hidden;}
-.main{background-image:url('view.jpg');background-size:cover;width:100%;min-height:100%;position:relative;}
+.main{background-image:url('https://github.com/adrian-townsend/home/blob/master/view.jpg?raw=true');background-size:cover;width:100%;min-height:100%;position:relative;}
 h*{font-family:'Holtwood One SC';}
 .navMenu{padding:10px;}
 ul.navList{list-style-type:none;}
